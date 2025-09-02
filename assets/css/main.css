@@ -912,24 +912,24 @@ section,
   }
 }
 
-.hero .stats-row {
+.stats-row {
   position: relative;
   z-index: 1;
   margin-top: 5rem;
   background-color: var(--surface-color);
   border-radius: 25px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
   padding-bottom: 2rem;
 }
 
-.hero .stat-item {
+.stat-item {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 2rem;
 }
 
-.hero .stat-item .stat-icon {
+.stat-item .stat-icon {
   flex-shrink: 0;
   width: 64px;
   height: 64px;
@@ -941,37 +941,37 @@ section,
   transition: 0.3s;
 }
 
-.hero .stat-item .stat-icon i {
+.stat-item .stat-icon i {
   font-size: 1.5rem;
   color: var(--accent-color);
 }
 
-.hero .stat-item:hover .stat-icon {
+.stat-item:hover .stat-icon {
   background-color: var(--accent-color);
 }
 
-.hero .stat-item:hover .stat-icon i {
+.stat-item:hover .stat-icon i {
   color: var(--contrast-color);
 }
 
-.hero .stat-item .stat-content {
+.stat-item .stat-content {
   flex-grow: 1;
 }
 
-.hero .stat-item .stat-content h4 {
+.stat-item .stat-content h4 {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
   font-weight: 600;
 }
 
-.hero .stat-item .stat-content p {
+.stat-item .stat-content p {
   font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
 }
 
 @media (max-width: 575px) {
-  .hero .stat-item {
+  .stat-item {
     padding: 1.5rem;
   }
 }
